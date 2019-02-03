@@ -33,8 +33,8 @@ print """
 
 def main():
         print"  [01] OS"
-        print"  [03] DE"
-        print"  \033[0;31m[02] Exit"
+        print"  [02] DE"
+        print"  \033[0;31m[03] Exit"
         han = raw_input("\033[0;36m\nHaN:~#\033[0m ")
 
         if han == "1" or han == "01":
