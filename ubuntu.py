@@ -50,7 +50,7 @@ def main():
             os.system("cd && bash start-ubuntu.sh")
 
         elif han == "2" or han == "02":
-          if platform == "linux" or if platform == "Linux"
+          if platform == "linux" or if platform == "Linux":
             banner()
             os.system("apt-get update")
             os.system("apt-get upgrade")
