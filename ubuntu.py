@@ -32,8 +32,8 @@ print """
 """
 
 def main():
-        print"  [01] Install"
-        print"  [03] 
+        print"  [01] OS"
+        print"  [03] DE"
         print"  \033[0;31m[02] Exit"
         han = raw_input("\033[0;36m\nHaN:~#\033[0m ")
 
