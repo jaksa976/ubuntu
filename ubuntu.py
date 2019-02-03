@@ -1,5 +1,6 @@
 import os
 import time
+import sys
 from sys import platform
 
 ubuntu_banner = """
@@ -49,6 +50,7 @@ def main():
             os.system("cd && bash start-ubuntu.sh")
 
         elif han == "2" or han == "02":
+          if platform == "linux" or if platform == "Linux"
             banner()
             os.system("apt-get update")
             os.system("apt-get upgrade")
@@ -57,6 +59,9 @@ def main():
             os.system("neofetch")
             os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
             os.system("cd && bash de-apt-xfce4.sh")
+         elif platform == "android" or platform == "Android":
+            print"\nWrong OS !!!!"
+            sys.exit()
         
         elif han == "3" or han == "03":
             print"Exit...."
