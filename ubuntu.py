@@ -50,18 +50,14 @@ def main():
             os.system("cd && bash start-ubuntu.sh")
 
         elif han == "2" or han == "02":
-          if platform == "linux" or if platform == "Linux":
             banner()
-            os.system("apt-get update")
-            os.system("apt-get upgrade")
-            os.system("apt-get install ruby && gem install lolcat")
-            os.system("apt install neofetch")
+            os.system("apt-get update -y")
+            os.system("apt-get upgrade -y")
+            os.system("apt-get install ruby -y && gem install lolcat")
+            os.system("apt install neofetch -y")
             os.system("neofetch")
             os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
             os.system("cd && bash de-apt-xfce4.sh")
-         elif platform == "android" or platform == "Android":
-            print"\nWrong OS !!!!"
-            sys.exit()
         
         elif han == "3" or han == "03":
             print"Exit...."
