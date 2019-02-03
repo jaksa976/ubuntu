@@ -4,7 +4,7 @@ import sys
 from sys import platform
 
 ubuntu_banner = """
-  \033[0;31mWelcome to Ubuntu Installation
+    \033[0;31mWelcome to Ubuntu Installation
  _   _ ____  _   _ _   _ _____ _   _
 | | | | __ )| | | | \ | |_   _| | | |
 | | | |  _ \| | | |  \| | | | | | | |
