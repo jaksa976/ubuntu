@@ -1,6 +1,6 @@
 import os
-import sys
 import time
+from sys import platform
 
 ubuntu_banner = """
   \033[0;31mWelcome to Ubuntu Installation
@@ -33,6 +33,7 @@ print """
 
 def main():
         print"  [01] Install"
+        print"  [03] 
         print"  \033[0;31m[02] Exit"
         han = raw_input("\033[0;36m\nHaN:~#\033[0m ")
 
@@ -46,6 +47,9 @@ def main():
             os.system("cd && bash ubuntu.sh")
             os.system("cd /$HOME")
             os.system("cd && bash start-ubuntu.sh")
+
+        elif han == "2" or han == "02":
+          if platform == "Linux":
             os.system("apt-get update")
             os.system("apt-get upgrade")
             os.system("apt-get install ruby && gem install lolcat")
@@ -53,8 +57,11 @@ def main():
             os.system("neofetch")
             os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
             os.system("cd && bash de-apt-xfce4.sh")
-
-        elif han == "2" or han == "02":
+          elif platform == "Android"
+            print "\nWrong Os !!!
+            
+        elif han == "3" or han == "03":
+            print"Exit...."
             sys.exit()
 
         else:
