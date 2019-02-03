@@ -3,16 +3,16 @@ import sys
 import time
 
 ubuntu_banner = """
- _   _ ____  _   _ _   _ _____ _   _ 
+  \033[0;31mWelcome to Ubuntu Installation
+ _   _ ____  _   _ _   _ _____ _   _
 | | | | __ )| | | | \ | |_   _| | | |
 | | | |  _ \| | | |  \| | | | | | | |
 | |_| | |_) | |_| | |\  | | | | |_| |
  \___/|____/ \___/|_| \_| |_|  \___/
-+===================================+
+\033[0;32m+===================================+
 |  Author     : Farhan Abdurrahman  |
 |  Contact    : www.fsecurity7.com  |
 +++++++++++++++++++++++++++++++++++++
-
 """
 def banner():
         print ubuntu_banner
@@ -44,14 +44,15 @@ def main():
             os.system("apt-get install wget proot tar -y")
             os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh")
             os.system("cd && bash ubuntu.sh")
+            os.system("cd")
             os.system("./start-ubuntu.sh")
-            os.system("wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
-            os.system("bash de-apt-xfce4.sh")
             os.system("apt-get update")
             os.system("apt-get upgrade")
             os.system("apt-get install ruby && gem install lolcat")
             os.system("apt install neofetch")
             os.system("neofetch")
+            os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
+            os.system("cd && bash de-apt-xfce4.sh")
 
         elif han == "2" or han == "02":
             sys.exit()
