@@ -58,7 +58,7 @@ def main():
             os.system("cd && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh")
             os.system("cd && bash de-apt-xfce4.sh")
           elif platform == "Android":
-            print "\nWrong Os !!!
+            print "\nWrong Os !!!"
             
         elif han == "3" or han == "03":
             print"Exit...."
